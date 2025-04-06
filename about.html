@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="mock.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+       
+        
+        h1, h2, p {
+            background-color: rgba(147, 255, 214, 0.7);
+            color: #021375;
+            font-size: 4em;
+            margin: 0.5% auto;
+            padding: 1%;
+            border-radius: 9%;
+            width: fit-content;
+        }
+        h2 {
+            background-color: rgba(2, 19, 117, 0.5);
+            color: rgba(147, 255, 214, 0.9);
+            cursor: pointer;
+        }
+        .hide {
+            display: none;
+        }
+        h2:hover + .hide {
+            display: block;
+        }
+        p{
+            font-size: 3em;
+        }
+        img {
+            width: 10%;
+            height: auto;
+            margin-top: 1%;
+            border-radius: 7%;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        #Inst{
+            font-size: 2.5em;
+            background-color: rgba(0, 0, 0, 0.0);
+            
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" id="name">D SAHASRA SATHVIK</a>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects&Skills</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div id="About">
+        <h1>EDUCATION</h1>
+        <h2>HIGH-SCHOOL</h2>
+        <div class="hide">
+            <p>ST. FRANCIS SCHOOL (ICSE, 2012-2022, Bengaluru, Karnataka)</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP2GBiZjxahElgUTSb62nLSR2LrR-JrBq8VQ&s" alt="school-logo">
+        </div>
+        <h2>INTERMEDIATE</h2>
+        <div class="hide">
+            <p>FIITJEE (BIE-AP, 2022-2024, Vijayawada, Andhra Pradesh)</p>
+            <img src="data:image/png;base64,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" alt="jrclg-logo">
+        </div>
+        <h2>BACHELOR OF TECHNOLOGY</h2>
+        <div class="hide">
+            <p>AMRITA (Computer Science, 2024-PRESENT, Amritapuri, Kerala)</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8hpkiFKAMGjNLTN_QruqmJ3BiO6iiQVIdHw&s" alt="clg-logo">
+        </div>
+        <h1>HOBBIES</h1>
+        <p>Playing Chess, Watching Anime, Reading Manga</p>
+        <p id="Inst">Hover over to view details*</p>
+    </div>
+</body>
+</html>

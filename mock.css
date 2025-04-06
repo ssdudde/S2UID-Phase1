@@ -1,0 +1,177 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #021375;
+    background-image: url("https://e1.pxfuel.com/desktop-wallpaper/734/564/desktop-wallpaper-techy-backgrounds-portfolio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+}
+
+@keyframes mainNav {
+    from { background-color: #021375; }
+    to { background-color: #333; }
+}
+
+#name{
+    text-decoration:none;
+    color: #ffffff;
+}
+nav {
+    display: flex;
+    justify-content: start;
+    background: #333;
+    padding: 1.5vh 0;
+    animation: mainNav 1.5s ease-in-out 0.1s;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav a {
+    color: rgb(147, 255, 214);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0.5%;
+    font-size: 2.5vh;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #1affd5;
+}
+
+@keyframes abtBox {
+    from { background-color: #021375; }
+    to { background-color: rgba(255, 255, 255, 0.1); }
+}
+
+#About {
+    max-width: 85%;
+    margin: 5vh auto;
+    padding: 3%;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    animation: abtBox 1.5s ease-in-out;
+}
+
+@keyframes mainBox {
+    from { background-color: rgb(2, 19, 117); }
+    to { background-color: rgb(147, 255, 214,0.1S); }
+}
+
+.container {
+    max-width: 90%;
+    margin: 10vh auto;
+    background: rgb(147, 255, 214);
+    padding: 3%;
+    border-radius: 5%;
+    opacity: 0.8;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
+    animation: mainBox 1.5s ease-in-out 0.1s;
+}
+.Projects{
+    max-width: 90%;
+    margin: 10vh auto;
+    background: rgb(147, 255, 214,0.7);
+    padding: 3%;
+    border-radius: 5%;
+    opacity: 0.8;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    animation: mainBox 1.5s ease-in-out 0.1s;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+.container p {
+    font-size: 1.5em;
+}
+
+h1, p {
+    color: #021375;
+}
+
+h2 {
+    color: #021375;
+    font-size: 2em;
+}
+
+
+@keyframes abtBox {
+    from { background-color: #021375; }
+    to { background-color: rgba(255, 255, 255, 0.1); }
+}
+
+#About {
+    max-width: 85%;
+    margin: 5vh auto;  
+    padding: 3%;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px); 
+    animation: abtBox 1.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2%;
+    }
+
+    nav a {
+        font-size: 2vh;
+        margin: 1.5% 0;
+    }
+
+    .container ,#About{
+        max-width: 95%;
+        margin: 5% auto;
+        padding: 5%;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .container p {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 3%;
+    }
+
+    nav a {
+        font-size: 2vh;
+        margin: 2% 0;
+    }
+
+    .container ,#About{
+        max-width: 95%;
+        margin: 8% auto;
+        padding: 6%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .container p {
+        font-size: 1em;
+    }
+}

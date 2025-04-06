@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="mock.css">
+        <title>mockup</title>
+        <style>
+            #Skills,#projects{
+                font-size: 5em;
+                color: rgba(147, 255, 214);
+                text-align: left;
+            }
+            #languages{
+                background: rgba(147, 255, 214,0.1);
+            }
+            .language-container {
+                display: flex;
+                align-items: center;
+                gap: 10px; /* Space between items */
+                flex-wrap: wrap; /* Prevents overflow on smaller screens */
+            }
+
+            .language-container p {
+                margin: 0;
+                font-weight: bold;
+            }
+
+            .language-bar {
+                
+                appearance: none;
+                width: 10%; /* Adjust width */
+                height: 8%;
+                background-color: #021375;
+                border-radius: 30%;
+                outline: none;
+            }
+            .Projects{
+                display: flex;
+                justify-content: space-between;
+            }
+            img {
+            width: 10%;
+            height: auto;
+            margin-top: 1%;
+            border-radius: 7%;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        </style>
+    </head>
+    <body>
+        
+        <nav>
+            <a href="index.html" id="name">D SAHASRA SATHVIK</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <h1 id="projects">Projects</h1>
+        <div class="Projects">
+            <div>
+            <h1>Morse Deocder</h1>
+            <p>Made an mini-projects based on arduino.Which converts morse code to english alphabets and vice versa</p>
+            </div>
+            <img src="https://electropeak.com/learn/wp-content/uploads/2019/07/morse_rec_circuit.jpg" rel="Projpic">    
+        </div>
+            <div class="Projects">
+            <div>
+            <h1>Weather Wizz</h1>
+            <p>Made chrome extension which gives weather information based <br>city inputted.Made it using basic javascript,html,css. Implemented api to fectch data.</p>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-iP3xhW_gZe6Ltd9gz5byCaOtWq2EGYz21Q&s" rel="Projpic">
+            </div>
+            <h1 id="Skills">Skills</h1>
+            <div class="Projects">
+                <div>
+                    <h1>Programming Languages:</h1>
+                    <p>JAVA,PYTHON,HTML,CSS</p>
+                    
+                    
+                    <h1>Known Languages:</h1>
+                    <div class="language-container">
+                        <p>Telugu</p>
+                        <input class="language-bar" type="range" min="0" max="100" value="70" disabled>
+                        
+                        <p>English</p>
+                        <input class="language-bar" type="range" min="0" max="100" value="80" disabled>
+                        
+                        <p>Hindi</p>
+                        <input class="language-bar" type="range" min="0" max="100" value="50" disabled>
+                        
+                        <p>Kannada</p>
+                        <input class="language-bar" type="range" min="0" max="100" value="30" disabled>
+                    </div>
+                </div>
+                
+            
+        </div>
