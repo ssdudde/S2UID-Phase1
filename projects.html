@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="mock.css">
         <title>mockup</title>
         <style>
+            h1{
+                font-size: 3vw;
+                text-decoration: underline;
+            }
             #Skills,#projects{
-                font-size: 5em;
+                text-decoration: none;
+                font-size: 3vw;
                 color: rgba(147, 255, 214);
-                text-align: left;
+                border-bottom:solid 20px #021375 ;
+
+                
             }
             #languages{
                 background: rgba(147, 255, 214,0.1);
@@ -30,12 +39,17 @@
                 width: 10%; /* Adjust width */
                 height: 8%;
                 background-color: #021375;
-                border-radius: 30%;
+                border-radius: 2rem;
                 outline: none;
             }
             .Projects{
                 display: flex;
                 justify-content: space-between;
+                margin: 2rem;
+                border-radius: 8px;
+            }
+            p,ol{
+                font-size: 2.5vh;
             }
             img {
             width: 10%;
@@ -48,25 +62,29 @@
         </style>
     </head>
     <body>
-        
-        <nav>
-            <a href="index.html" id="name">D SAHASRA SATHVIK</a>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div class="header">
+            <a href="index.html" id="name">D SAHASRA SATHVIK</a>    
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects&Skills</a>  
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
         <h1 id="projects">Projects</h1>
         <div class="Projects">
             <div>
             <h1>Morse Deocder</h1>
-            <p>Made an mini-projects based on arduino.Which converts morse code to english alphabets and vice versa</p>
+            <p>Made an mini-projects based on arduino.Which converts morse code to english alphabets and vice versa<br>
+            <a href="https://github.com/ssdudde/S1EEE-Mini-Proj-Morse-.git">Details...</a></p>
             </div>
             <img src="https://electropeak.com/learn/wp-content/uploads/2019/07/morse_rec_circuit.jpg" rel="Projpic">    
         </div>
             <div class="Projects">
             <div>
             <h1>Weather Wizz</h1>
-            <p>Made chrome extension which gives weather information based <br>city inputted.Made it using basic javascript,html,css. Implemented api to fectch data.</p>
+            <p>Made chrome extension which gives weather information based <br>city inputted.Made it using basic javascript,html,css. Implemented api to fectch data.<br>
+            <a href="https://github.com/ssdudde/amfoss-tasks/tree/main/task_07">Details...</Details></a></p>
             </div>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-iP3xhW_gZe6Ltd9gz5byCaOtWq2EGYz21Q&s" rel="Projpic">
             </div>
@@ -74,9 +92,13 @@
             <div class="Projects">
                 <div>
                     <h1>Programming Languages:</h1>
-                    <p>JAVA,PYTHON,HTML,CSS</p>
-                    
-                    
+                    <ol>
+                        <li>JAVA</li>
+                        <li>PYTHON</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JAVASCRIPT</li>     
+                    </ol>   
                     <h1>Known Languages:</h1>
                     <div class="language-container">
                         <p>Telugu</p>
